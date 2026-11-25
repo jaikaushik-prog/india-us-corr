@@ -1,0 +1,15 @@
+# raw data: rebuild with fetch_data.py (not ours to redistribute)
+data/
+macro/
+sect/
+flows/
+# scratch and superseded files
+shot.sh
+shot.html
+*.png
+rep/
+*_backup.html
+tmpl.html
+build2.py
+build_macro.py
+__pycache__/

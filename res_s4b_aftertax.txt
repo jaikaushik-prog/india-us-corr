@@ -1,0 +1,60 @@
+gross CAGR N,U 0.12322024978197588 0.16713728013702078
+         sc                                     rt  mode   w   cagr   vol    dd  trades   tax
+10   actual               Indian fund, 0.6% a year  band   0  11.06  15.8 -34.4       0  0.00
+11   actual               Indian fund, 0.6% a year  band  10  11.53  15.0 -32.4       1  0.37
+12   actual               Indian fund, 0.6% a year  band  20  11.86  14.4 -31.4       1  0.41
+13   actual               Indian fund, 0.6% a year  band  30  12.33  14.0 -29.6       3  1.43
+14   actual               Indian fund, 0.6% a year  band  40  12.70  13.8 -28.2       3  1.03
+25   actual               Indian fund, 1.0% a year  band   0  11.06  15.8 -34.4       0  0.00
+26   actual               Indian fund, 1.0% a year  band  10  11.50  15.0 -32.5       1  0.36
+27   actual               Indian fund, 1.0% a year  band  20  11.77  14.4 -31.4       1  0.38
+28   actual               Indian fund, 1.0% a year  band  30  12.22  14.0 -29.8       3  1.12
+29   actual               Indian fund, 1.0% a year  band  40  12.51  13.8 -28.2       3  0.93
+40   actual  Direct US ETF, 0.4% a year + 1% entry  band   0  11.06  15.8 -34.4       0  0.00
+41   actual  Direct US ETF, 0.4% a year + 1% entry  band  10  11.54  15.0 -32.4       1  0.37
+42   actual  Direct US ETF, 0.4% a year + 1% entry  band  20  11.88  14.4 -31.4       1  0.41
+43   actual  Direct US ETF, 0.4% a year + 1% entry  band  30  12.36  14.0 -29.6       3  1.69
+44   actual  Direct US ETF, 0.4% a year + 1% entry  band  40  12.75  13.8 -28.1       3  1.07
+55    equal               Indian fund, 0.6% a year  band   0  11.06  15.8 -34.4       0  0.00
+56    equal               Indian fund, 0.6% a year  band  10  11.02  15.0 -32.8       0  0.00
+57    equal               Indian fund, 0.6% a year  band  20  10.98  14.4 -31.2       0  0.00
+58    equal               Indian fund, 0.6% a year  band  30  11.05  14.0 -29.8       2  0.80
+59    equal               Indian fund, 0.6% a year  band  40  11.07  13.8 -28.3       3  1.47
+70    equal               Indian fund, 1.0% a year  band   0  11.06  15.8 -34.4       0  0.00
+71    equal               Indian fund, 1.0% a year  band  10  10.98  15.0 -32.8       0  0.00
+72    equal               Indian fund, 1.0% a year  band  20  10.90  14.4 -31.3       0  0.00
+73    equal               Indian fund, 1.0% a year  band  30  10.92  14.0 -29.8       2  0.83
+74    equal               Indian fund, 1.0% a year  band  40  10.89  13.8 -28.4       3  1.46
+85    equal  Direct US ETF, 0.4% a year + 1% entry  band   0  11.06  15.8 -34.4       0  0.00
+86    equal  Direct US ETF, 0.4% a year + 1% entry  band  10  11.03  15.0 -32.8       0  0.00
+87    equal  Direct US ETF, 0.4% a year + 1% entry  band  20  11.00  14.4 -31.2       0  0.00
+88    equal  Direct US ETF, 0.4% a year + 1% entry  band  30  11.08  14.0 -29.8       2  0.80
+89    equal  Direct US ETF, 0.4% a year + 1% entry  band  40  11.12  13.8 -28.3       3  2.15
+100  minus3               Indian fund, 0.6% a year  band   0  11.06  15.8 -34.4       0  0.00
+101  minus3               Indian fund, 0.6% a year  band  10  10.78  15.1 -33.0       0  0.00
+102  minus3               Indian fund, 0.6% a year  band  20  10.50  14.5 -31.6       1  0.79
+103  minus3               Indian fund, 0.6% a year  band  30  10.15  14.0 -30.2       1  0.83
+104  minus3               Indian fund, 0.6% a year  band  40   9.99  13.8 -28.4       4  2.12
+115  minus3               Indian fund, 1.0% a year  band   0  11.06  15.8 -34.4       0  0.00
+116  minus3               Indian fund, 1.0% a year  band  10  10.75  15.1 -33.1       0  0.00
+117  minus3               Indian fund, 1.0% a year  band  20  10.42  14.5 -31.7       1  0.82
+118  minus3               Indian fund, 1.0% a year  band  30  10.03  14.0 -30.3       1  0.79
+119  minus3               Indian fund, 1.0% a year  band  40   9.81  13.8 -28.5       4  1.52
+130  minus3  Direct US ETF, 0.4% a year + 1% entry  band   0  11.06  15.8 -34.4       0  0.00
+131  minus3  Direct US ETF, 0.4% a year + 1% entry  band  10  10.79  15.1 -33.0       0  0.00
+132  minus3  Direct US ETF, 0.4% a year + 1% entry  band  20  10.51  14.5 -31.6       1  0.78
+133  minus3  Direct US ETF, 0.4% a year + 1% entry  band  30  10.17  14.0 -30.2       1  0.82
+134  minus3  Direct US ETF, 0.4% a year + 1% entry  band  40  10.01  13.8 -28.4       4  2.10
+         sc                        rt  mode   w   cagr   vol    dd  trades   tax
+2    actual  Indian fund, 0.6% a year  none  20  11.90  14.3 -30.6       0  0.00
+7    actual  Indian fund, 0.6% a year  year  20  11.86  14.4 -31.1      10  1.95
+12   actual  Indian fund, 0.6% a year  band  20  11.86  14.4 -31.4       1  0.41
+47    equal  Indian fund, 0.6% a year  none  20  10.98  14.4 -31.2       0  0.00
+52    equal  Indian fund, 0.6% a year  year  20  11.04  14.4 -31.3      10  1.30
+57    equal  Indian fund, 0.6% a year  band  20  10.98  14.4 -31.2       0  0.00
+92   minus3  Indian fund, 0.6% a year  none  20  10.48  14.5 -31.6       0  0.00
+97   minus3  Indian fund, 0.6% a year  year  20  10.48  14.4 -31.4      10  1.21
+102  minus3  Indian fund, 0.6% a year  band  20  10.50  14.5 -31.6       1  0.79
+2015 [[np.float64(8.0), np.float64(13.3), np.float64(-21.2), 0, 0.0], [np.float64(9.02), np.float64(11.5), np.float64(-17.2), 1, np.float64(0.41)], [np.float64(9.85), np.float64(10.6), np.float64(-13.0), 1, np.float64(0.03)]]
+2020 [[np.float64(13.7), np.float64(18.0), np.float64(-34.4), 0, 0.0], [np.float64(14.26), np.float64(16.8), np.float64(-31.2), 0, 0.0], [np.float64(15.03), np.float64(16.4), np.float64(-28.0), 2, np.float64(0.15)]]
+[[500000, 0.2, 100000, [1.0, 2.0]], [1000000, 0.2, 200000, [0.5, 1.0]], [2000000, 0.2, 400000, [0.25, 0.5]]]

@@ -1,0 +1,121 @@
+<title>NIFTY Macro Regimes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* Layout: single column; one stacked timeline with a regime strip leads, evidence and scenarios follow */
+:root{--bg:#f8fafb;--fg:#14202b;--mut:#5a6874;--line:#d9e0e5;--zero:#8593a0;--s1:#2a78d6;--pos:#2a78d6;--neg:#d6453d;--r1:#d6453d;--r2:#eda100;--r3:#b4bfc8;--r4:#1baf7a;--disp:"Space Grotesk",system-ui,sans-serif;--body:Inter,system-ui,sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141a1f;--fg:#e8eef2;--mut:#9aa8b3;--line:#2c363e;--zero:#6b7985;--s1:#3987e5;--pos:#3987e5;--neg:#e0645c;--r1:#e0645c;--r2:#c98500;--r3:#4b5862;--r4:#199e70;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141a1f;--fg:#e8eef2;--mut:#9aa8b3;--line:#2c363e;--zero:#6b7985;--s1:#3987e5;--pos:#3987e5;--neg:#e0645c;--r1:#e0645c;--r2:#c98500;--r3:#4b5862;--r4:#199e70;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--body)}
+main{max-width:860px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--disp);text-wrap:balance;line-height:1.2}
+h1{font-size:2rem;margin:0 0 12px}h2{font-size:1.3rem;margin:44px 0 10px}h3{font-size:1rem;margin:22px 0 4px}
+p,ul{max-width:66ch;margin:0 0 12px}li{margin-bottom:6px}.mut{color:var(--mut);font-size:.875rem}a{color:var(--s1)}
+.take{border-top:2px solid var(--fg);padding-top:14px;margin-top:28px}.take ul{padding-left:20px}
+.lg{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.875rem;margin:8px 0}.lg i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px}
+.ch{position:relative}svg{display:block;width:100%}svg text{font:12px var(--body);fill:var(--mut)}svg .pt{font-weight:600;fill:var(--fg)}
+.tip{position:absolute;top:30px;pointer-events:none;background:var(--bg);border:1px solid var(--line);padding:6px 10px;font-size:.8rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tw{overflow-x:auto;min-width:0;margin-bottom:14px}
+table{border-collapse:collapse;font-size:.9rem;font-variant-numeric:tabular-nums;width:100%}
+th,td{text-align:right;padding:7px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}th{font-weight:600;color:var(--mut)}td.w{white-space:normal;text-align:left;min-width:170px}th.l{text-align:left}
+</style>
+<main>
+<h1>NIFTY and the US: regimes, yield spreads and what comes next</h1>
+<p>Bond-yield spreads do not explain when NIFTY moves with the US. The India–US 10-year gap shrank from about 5.6 points in 2015 to 2.4 in 2026 while the correlation stayed around 0.3. Our best forecast is the long-run average, and it beats the regime and HAR models we tried.</p>
+<p class="mut">Monthly data, February 2015 to 24 November 2026. Correlation is NIFTY daily return against the prior S&amp;P 500 session. Sources: Yahoo Finance, US Treasury, FRED (OECD India yields, monthly averages to October 2026).</p>
+<div class="take"><h2 style="margin-top:0">Our view</h2><ul>
+<li><strong>Base case: a weak positive link returns.</strong> The next-month correlation forecast is 0.28, with an 80% range of −0.09 to 0.60. The chance of a negative month is about 18%.</li>
+<li><strong>A negative 12-month correlation has no precedent here.</strong> No 12-month window since 2015 was below zero.</li>
+<li><strong>Current regime: Neutral, just out of Squeeze.</strong> September and October were Squeeze (US yields and oil up). November has one trigger active, the dollar, and needs two.</li>
+<li><strong>Yield spreads are visible but not predictive.</strong> None of 50 spread and yield tests reached 5% significance.</li>
+<li><strong>One new feature in 2026:</strong> NIFTY has fallen when US 10-year yields rose overnight (correlation −0.25), the strongest such link in 12 years.</li></ul></div>
+<h2>The whole picture</h2>
+<p>Read down a vertical line to see one month across every panel. The coloured strip is the macro regime.</p>
+<div class="lg" id="lg"></div><div id="c-main"></div>
+<p>NIFTY's relative performance peaked in September 2022 and has fallen on balance since, while the India–US spread kept narrowing. That overlap is one slow trend, not repeated evidence. The sections below test whether changes line up quarter by quarter.</p>
+<h2>How regimes are defined</h2>
+<p>Thresholds were set before looking at any outcome. Each trigger is a three-month change measured at month-end.</p>
+<div class="tw"><table><thead><tr><th>Regime</th><th class="l">Rule</th><th class="l">Economic reading</th></tr></thead><tbody>
+<tr><td>Stress</td><td class="w">Average VIX of 25 or more</td><td class="w">Global risk-off, everything sells together</td></tr>
+<tr><td>Squeeze</td><td class="w">At least two of: US 10-year +25 bp, dollar index +2%, Brent +15%, USDINR +2%</td><td class="w">Costlier dollars and oil. Pressure on an oil importer reliant on foreign capital</td></tr>
+<tr><td>Tailwind</td><td class="w">At least two of the same moves in reverse</td><td class="w">Easier dollars and cheaper oil</td></tr>
+<tr><td>Neutral</td><td class="w">Anything else</td><td class="w">No dominant external driver</td></tr></tbody></table></div>
+<h3>Correlation within each regime, same month</h3><p class="mut">Pooled daily correlation with 95% intervals, resampling months.</p><div id="c-reg"></div>
+<div class="tw"><table><thead><tr><th>Regime</th><th>Months</th><th>Correlation</th><th>NIFTY/month</th><th>S&amp;P/month</th><th>NIFTY − S&amp;P</th><th>± 1 SE</th></tr></thead><tbody id="t-reg"></tbody></table></div>
+<p>The ordering is sensible: the link is highest in Stress and lowest in Squeeze, where NIFTY also lagged by 0.5 points a month. The intervals overlap heavily and the lag is within one standard error. Read before the month begins, regimes separate even less: 0.35, 0.25, 0.29 and 0.25.</p>
+<h2>Do yield spreads matter?</h2>
+<h3>India–US 10-year spread and NIFTY's relative return, by quarter</h3><p class="mut">Each dot is a quarter: change in the spread (percentage points) against NIFTY minus S&amp;P return (%). A visible effect would form a slope. Correlation −0.16, p = 0.28.</p><div id="c-sc"></div>
+<h3>Every test</h3><p class="mut">Correlation across 46–47 quarters. Blue is positive, red is negative. Two-sided p under 0.10 is marked with an asterisk; with 50 tests, about five would be expected by chance.</p><div class="tw" id="t-q"></div>
+<p>The nearest results are a steeper US 3-month to 10-year curve with NIFTY lagging in the same quarter (−0.28, p = 0.06), and a rise in the US 10-year followed by NIFTY outperforming the next quarter (+0.27, p = 0.06). Neither survives the number of tests.</p>
+<h3>Daily sensitivity to US 10-year yield changes</h3><p class="mut">Correlation of NIFTY's return with the preceding US change in the 10-year yield, by year.</p><div id="c-yd"></div>
+<p>In 2026 NIFTY became rate-sensitive. The S&amp;P showed the same sign that year (−0.18), so this fits a global rates story rather than one unique to India. One year out of 12 is not a pattern yet.</p>
+<h2>Forecasts</h2>
+<h3>Which model predicts next month's correlation?</h3><p>Tested month by month from January 2019 to October 2026 (94 forecasts), each using only earlier data. Lower error is better.</p>
+<div class="tw"><table><thead><tr><th>Model</th><th>Error (Fisher z)</th><th>Against average</th></tr></thead><tbody id="t-fc"></tbody></table></div>
+<p>The long-run average wins. HAR (1, 3 and 12-month averages) is 11% worse and adding regimes makes it 17% worse. Monthly correlations are too noisy for these models to extract persistence. This is a HAR model of correlation, so it says nothing about HAR forecasts of volatility.</p>
+<h3>Range to expect</h3><div id="c-fan"></div>
+<p class="mut">The next-month range uses out-of-sample errors. The longer ranges are the 10th to 90th percentiles of overlapping history since 2015, so they describe the past and are not independent forecasts.</p>
+<h3>Where the regime goes next</h3><div class="tw"><table><thead><tr><th>From</th><th>Neutral</th><th>Squeeze</th><th>Stress</th><th>Tailwind</th></tr></thead><tbody id="t-tr"></tbody></table></div>
+<p class="mut">Historical month-to-month frequencies. Stress has 15 months in total and seven of them are 2020, so its row is thin.</p>
+<h3>Scenarios to watch</h3><div class="tw"><table><thead><tr><th>Scenario</th><th class="l">What we would see</th><th class="l">What history suggests for the link</th></tr></thead><tbody>
+<tr><td>Link returns (base)</td><td class="w">Neutral holds, with fewer than two triggers active</td><td class="w">Monthly correlation mostly −0.05 to 0.56, middle 0.26</td></tr>
+<tr><td>Squeeze returns</td><td class="w">Dollar strength persists and one more trigger fires: US 10-year +25 bp, Brent +15% or USDINR +2% over three months</td><td class="w">Middle 0.29 in the following month. Same-month NIFTY lag of 0.5 points, not significant</td></tr>
+<tr><td>Global stress</td><td class="w">VIX averages 25 or more. It averaged 23.4 in November</td><td class="w">Highest correlation, middle 0.35. Diversification weakens when needed</td></tr>
+<tr><td>Tailwind</td><td class="w">Dollar, oil and yields fall together</td><td class="w">Middle 0.19, only 18 months of evidence</td></tr></tbody></table></div>
+<p class="mut">We give no probability to these beyond the transition table, and no NIFTY price target. The evidence does not support either.</p>
+<h2>Fundamental context, and where to dig</h2>
+<p>Our data shows Brent closing March 2026 at $118, USDINR moving from about 87 on average in 2025 to 94 in 2026, and the US 10-year ending September at 5.3%. Press coverage ties 2026's underperformance to <a href="https://www.business-standard.com/markets/news/global-funds-dump-indian-equities-at-record-pace-on-oil-shock-growth-fears-126041100158_1.html">record foreign selling during the oil shock</a> and reports the <a href="https://www.5paisa.com/blog/india-us-10-year-bond-yield-spread-widens-to-251-basis-points">India–US spread widening to 251 bp in October</a>. We have not verified those reports or tested flows.</p>
+<ul><li><strong>Foreign and domestic flows.</strong> Daily NSDL foreign flows and mutual-fund SIP data could explain why domestic money blunted the US link.</li>
+<li><strong>Index composition.</strong> NIFTY has little AI hardware. Compare Taiwan and KOSPI, which stayed linked.</li>
+<li><strong>Earnings and valuation.</strong> Test whether the earnings-growth gap explains relative return better than yields do.</li>
+<li><strong>Daily Indian yields.</strong> Monthly averages are too coarse for event studies around RBI and Fed meetings.</li>
+<li><strong>Risk dashboard.</strong> Use the regime as a displayed label beside volatility forecasts. Its forecasting test failed, so it should not change position size.</li></ul>
+<h2>Limits</h2>
+<ul><li>142 months and 47 quarters is a small sample. Failing to find an effect does not prove there is none: correlations below roughly 0.3 would often be missed.</li>
+<li>The regime rule set is our own choice. Others could classify some months differently.</li>
+<li>Some outcomes for 2026 were seen in earlier work before these regimes were defined. The thresholds were not tuned to them.</li>
+<li>Research for discussion, with no costs or trades modelled. Not investment advice.</li></ul>
+</main>
+<script>
+const D=/*DATA*/,$=i=>document.getElementById(i),T=D.ts,R=['Stress','Squeeze','Neutral','Tailwind'],C={Stress:'--r1',Squeeze:'--r2',Neutral:'--r3',Tailwind:'--r4'};
+const f=(v,d=2)=>(v<0&&+v.toFixed(d)!==0?'−':'')+Math.abs(v).toFixed(d);
+$('lg').innerHTML=R.map(r=>`<span><i style="background:var(${C[r]})"></i>${r}</span>`).join('');
+const pc=v=>`color-mix(in srgb,var(${v<0?'--neg':'--pos'}) ${Math.min(60,Math.abs(v)/.4*60).toFixed(0)}%,var(--bg))`;
+$('t-reg').innerHTML=D.concurrent.map(a=>`<tr><td>${a[0]}</td><td>${a[1]}</td><td>${f(a[2])}</td><td>${f(a[5])}%</td><td>${f(a[6])}%</td><td>${f(a[7])}</td><td>${f(a[8])}</td></tr>`).join('');
+const XL={d_inus:'Change, India–US 10y',d_2s10:'Change, US 2s10s',d_3m10:'Change, US 3m10y',d_us10:'Change, US 10y',d_real:'Change, US real 10y',d_interm:'Change, India 10y–3m',l_inus:'Level, India–US 10y',l_2s10:'Level, US 2s10s',l_us10:'Level, US 10y',l_real:'Level, US real 10y'},YL={corr:'Correlation',rel:'NIFTY − S&amp;P',nr:'NIFTY return',corr_next:'Correlation, next qtr',rel_next:'NIFTY − S&amp;P, next qtr'};
+$('t-q').innerHTML='<table><thead><tr><th>Yield measure</th>'+Object.values(YL).map(x=>`<th>${x}</th>`).join('')+'</tr></thead><tbody>'+Object.keys(XL).map(x=>`<tr><td>${XL[x]}</td>`+Object.keys(YL).map(y=>{const q=D.q.find(a=>a[0]==y&&a[1]==x);return `<td style="background:${pc(q[2])}">${f(q[2])}${q[3]<.1?'*':''}</td>`}).join('')+'</tr>').join('')+'</tbody></table>';
+const ML={mean:'Long-run average',last:'Last month',avg12:'12-month average',HAR:'HAR (1, 3, 12 months)','HAR+reg':'HAR plus regimes'};
+$('t-fc').innerHTML=D.fc.map(a=>`<tr><td>${ML[a[0]]}</td><td>${a[1].toFixed(3)}</td><td>${a[0]=='mean'?'—':Math.abs(a[2]).toFixed(1)+'% worse (squared error)'}</td></tr>`).join('');
+$('t-tr').innerHTML=R.map(r=>`<tr><td>${r}</td>${['Neutral','Squeeze','Stress','Tailwind'].map(k=>`<td>${Math.round(100*D.trans[r][k])}%</td>`).join('')}</tr>`).join('');
+function frame(id,h,lo,hi,ticks,fmt,body,label,l=46){
+const w=Math.max(300,$(id).clientWidth),r=8,t=12,b=28,Y=v=>t+(h-t-b)*(hi-v)/(hi-lo);
+$(id).innerHTML=`<div class="ch"><svg viewBox="0 0 ${w} ${h}" height="${h}" role="img" aria-label="${label}">`+ticks.map(v=>`<line x1="${l}" x2="${w-r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(${v?'--line':'--zero'})"/><text x="${l-6}" y="${Y(v)+4}" text-anchor="end">${fmt(v)}</text>`).join('')+body({w,h,l,r,t,b,Y})+'</svg></div>'}
+const PN=[['rel','NIFTY relative to S&P 500 (Jan–Feb 2015 = 100)',40,120,[50,75,100],0],['c6','NIFTY–S&P correlation, 6 months',-.2,.8,[0,.4,.8],2],['inus','India minus US 10-year yield (points)',1.5,6.5,[2,4,6],2],['s2s10','US 10-year minus 2-year yield (points)',-1.2,2.2,[-1,0,1,2],2],['us10','US 10-year yield (%)',0,6,[0,2,4,6],2]];
+function main(){
+const el=$('c-main'),w=Math.max(300,el.clientWidth),n=T.m.length,l=40,r=8,ph=120,gap=34,top=26,H=top+PN.length*(ph+gap)+18,X=i=>l+(w-l-r)*(i+.5)/n,bw=(w-l-r)/n;let g='';
+T.reg.forEach((q,i)=>{g+=`<rect x="${l+bw*i}" y="2" width="${bw+.3}" height="14" fill="var(${C[q]})"/>`});
+PN.forEach(([k,name,lo0,hi0,tk,d],p)=>{
+const v=T[k].filter(x=>x!=null),lo=Math.min(lo0,...v),hi=Math.max(hi0,...v),y0=top+p*(ph+gap)+18,Y=x=>y0+ph*(hi-x)/(hi-lo);
+T.reg.forEach((q,i)=>{if(q=='Stress'||q=='Squeeze')g+=`<rect x="${l+bw*i}" y="${y0}" width="${bw+.3}" height="${ph}" fill="var(${C[q]})" fill-opacity=".13"/>`});
+g+=`<text class="pt" x="${l}" y="${y0-5}">${name.replace('&','&amp;')}</text>`;
+tk.forEach(t=>g+=`<line x1="${l}" x2="${w-r}" y1="${Y(t)}" y2="${Y(t)}" stroke="var(${t?'--line':'--zero'})"/><text x="${l-5}" y="${Y(t)+4}" text-anchor="end">${f(t,t%1?1:0)}</text>`);
+let path='',on=false;T[k].forEach((x,i)=>{if(x==null){on=false;return}path+=(on?'L':'M')+X(i).toFixed(1)+' '+Y(x).toFixed(1);on=true});
+g+=`<path d="${path}" fill="none" stroke="var(--s1)" stroke-width="2" stroke-linejoin="round"/>`});
+T.m.forEach((m,i)=>{if(m.endsWith('-01')&&(w>560||+m.slice(2,4)%2==0))g+=`<text x="${l+bw*i}" y="${H-4}">${m.slice(0,4)}</text>`});
+el.innerHTML=`<div class="ch"><svg viewBox="0 0 ${w} ${H}" height="${H}" role="img" aria-label="Regimes, relative performance, correlation and yield spreads">${g}<line class="x" y1="0" y2="${H-18}" stroke="var(--fg)" stroke-opacity=".5" visibility="hidden"/></svg><div class="tip" hidden></div></div>`;
+const sv=el.querySelector('svg'),ln=el.querySelector('.x'),tip=el.querySelector('.tip');
+sv.addEventListener('pointermove',e=>{const i=Math.max(0,Math.min(n-1,Math.floor((e.clientX-sv.getBoundingClientRect().left-l)/bw))),x=X(i),o=(v,d)=>v==null?'n/a':f(v,d);
+ln.setAttribute('x1',x);ln.setAttribute('x2',x);ln.setAttribute('visibility','visible');tip.hidden=false;
+tip.innerHTML=`<b>${T.m[i]} · ${T.reg[i]}</b><br>Relative ${o(T.rel[i],0)}<br>6m correlation ${o(T.c6[i],2)}<br>India–US 10y ${o(T.inus[i],2)}<br>US 2s10s ${o(T.s2s10[i],2)}<br>US 10y ${o(T.us10[i],2)}<br>VIX ${o(T.vix[i],1)} · Brent ${o(T.br[i],0)}<br>USDINR ${o(T.inr[i],1)}`;
+tip.style.left=(x>w/2?x-tip.offsetWidth-10:x+10)+'px'});
+sv.addEventListener('pointerleave',()=>{tip.hidden=true;ln.setAttribute('visibility','hidden')})}
+function all(){main();
+frame('c-reg',210,0,.6,[0,.2,.4,.6],v=>v?v.toFixed(1):'0',o=>D.concurrent.map((a,i)=>{const x=o.l+(o.w-o.l-o.r)*(i+.5)/4;return `<g><title>${a[0]}: ${f(a[2])} (${f(a[3])} to ${f(a[4])})</title><line x1="${x}" x2="${x}" y1="${o.Y(a[3])}" y2="${o.Y(a[4])}" stroke="var(--fg)" stroke-width="2"/><circle cx="${x}" cy="${o.Y(a[2])}" r="6" fill="var(${C[a[0]]})"/><text x="${x}" y="${o.h-8}" text-anchor="middle">${a[0]}</text></g>`}).join(''),'Correlation by regime');
+const qs=D.qs.filter(a=>a[1]!=null),mx=1.6,my=Math.ceil(Math.max(...qs.map(a=>Math.abs(a[2])))/5)*5;
+frame('c-sc',330,-my,my,[-my,-my/2,0,my/2,my],v=>v?f(v,v%1?1:0):'0',o=>{const X=v=>o.l+(o.w-o.l-o.r)*(v+mx)/(2*mx);return [-1.5,-.75,0,.75,1.5].map(v=>`<line x1="${X(v)}" x2="${X(v)}" y1="${o.t}" y2="${o.h-o.b}" stroke="var(${v?'--line':'--zero'})"/><text x="${X(v)}" y="${o.h-8}" text-anchor="middle">${v?f(v):'0'}</text>`).join('')+qs.map(a=>{const n=+a[0].slice(0,4)>=2025;return `<circle cx="${X(a[1])}" cy="${o.Y(a[2])}" r="5" fill="var(${n?'--r2':'--s1'})" stroke="var(--bg)"><title>${a[0]}: spread ${f(a[1])}, relative ${f(a[2],1)}%</title></circle>`}).join('')+`<text x="${o.l+6}" y="${o.t+12}">Amber: 2025–26</text>`},'Spread change against relative return');
+frame('c-yd',210,-.4,.2,[-.4,-.2,0,.2],v=>v?f(v,1):'0',o=>D.ydaily.map((a,i)=>{const st=(o.w-o.l-o.r)/12,x=o.l+st*(i+.5),y=o.Y(a[1]),bw=Math.min(32,st*.65);return `<g><title>${a[0]}: ${f(a[1])}</title><rect x="${x-bw/2}" width="${bw}" y="${Math.min(y,o.Y(0))}" height="${Math.abs(y-o.Y(0))}" fill="var(${a[1]<0?'--neg':'--pos'})"/><text x="${x}" y="${o.h-8}" text-anchor="middle">${o.w<560?"'"+String(a[0]).slice(2):a[0]}</text></g>`}).join(''),'Yield sensitivity by year');
+const fan=[['Next month',D.fcast1],['3 months',D.h3],['6 months',D.h6],['12 months',D.h12]];
+frame('c-fan',230,-.2,.8,[-.2,0,.2,.4,.6,.8],v=>v?f(v,1):'0',o=>fan.map(([n,a],i)=>{const x=o.l+(o.w-o.l-o.r)*(i+.5)/4;return `<g><title>${n}: ${f(a[0])} (${f(a[1])} to ${f(a[2])})</title><line x1="${x}" x2="${x}" y1="${o.Y(a[1])}" y2="${o.Y(a[2])}" stroke="var(--s1)" stroke-width="10" stroke-opacity=".35" stroke-linecap="round"/><circle cx="${x}" cy="${o.Y(a[0])}" r="6" fill="var(--s1)"/><text x="${x+12}" y="${o.Y(a[0])+4}">${f(a[0])}</text><text x="${x}" y="${o.h-8}" text-anchor="middle">${n}</text></g>`}).join(''),'Correlation ranges by horizon')}
+all();let z;addEventListener('resize',()=>{clearTimeout(z);z=setTimeout(all,150)});
+</script>

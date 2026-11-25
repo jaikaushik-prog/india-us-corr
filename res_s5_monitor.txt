@@ -1,0 +1,36 @@
+logit coef [-3.59  0.69 -0.08]
+dev 1696 base rate 0.154
+{'macro4': np.float64(0.505), 'all6': np.float64(0.515), 'logit': np.float64(0.537), 'iv': np.float64(0.539), 'rv': np.float64(0.571)}
+diff vs India VIX CI {'macro4': [-0.201, 0.083], 'all6': [-0.138, 0.054], 'logit': [-0.036, 0.054]}
+['dev', 'Green', 1037, 16, np.float64(13.3), np.float64(0.21)]
+['dev', 'Amber', 352, 14, np.float64(14.8), np.float64(1.48)]
+['dev', 'Red', 307, 16, np.float64(20.7), np.float64(3.17)]
+['dev', 'IV<15', 627, 15, np.float64(11.6), np.float64(0.05)]
+['dev', '15-20', 705, 16, np.float64(14.3), np.float64(0.65)]
+['dev', '>20', 364, 16, np.float64(21.8), np.float64(3.33)]
+flag ['dev', 'US 10-year', 369, 15, 16]
+flag ['dev', 'Dollar', 435, 17, 15]
+flag ['dev', 'Brent', 451, 10, 17]
+flag ['dev', 'USDINR', 445, 18, 14]
+flag ['dev', 'US VIX', 211, 21, 15]
+flag ['dev', 'India VIX', 364, 16, 15]
+check 718 base rate 0.135
+{'macro4': np.float64(0.66), 'all6': np.float64(0.672), 'logit': np.float64(0.641), 'iv': np.float64(0.762), 'rv': np.float64(0.79)}
+diff vs India VIX CI {'macro4': [-0.207, 0.107], 'all6': [-0.172, 0.073], 'logit': [-0.319, 0.008]}
+['check', 'Green', 417, 8, np.float64(11.9), np.float64(0.96)]
+['check', 'Amber', 121, 7, np.float64(13.0), np.float64(1.35)]
+['check', 'Red', 180, 31, np.float64(16.0), np.float64(0.8)]
+['check', 'IV<15', 403, 5, np.float64(10.6), np.float64(0.93)]
+['check', '15-20', 209, 23, np.float64(14.8), np.float64(0.44)]
+['check', '>20', 106, 28, np.float64(19.5), np.float64(2.32)]
+flag ['check', 'US 10-year', 340, 18, 10]
+flag ['check', 'Dollar', 257, 21, 9]
+flag ['check', 'Brent', 110, 35, 10]
+flag ['check', 'USDINR', 168, 23, 11]
+flag ['check', 'US VIX', 135, 27, 10]
+flag ['check', 'India VIX', 107, 28, 11]
+dev red episodes 54 hits 9.0
+check red episodes 12 hits 2.0
+dev rank corr fwd vol {'macro4': np.float64(0.17), 'all6': np.float64(0.36), 'iv': np.float64(0.63), 'rv': np.float64(0.61)}
+check rank corr fwd vol {'macro4': np.float64(0.27), 'all6': np.float64(0.33), 'iv': np.float64(0.67), 'rv': np.float64(0.39)}
+NOW ['2026-11-25', {'US 10-year': 0, 'Dollar': 1, 'Brent': 0, 'USDINR': 0, 'US VIX': 1, 'India VIX': 0}, {'y': 4.91, 'd': 103.81, 'b': 91.4, 'i': 92.92, 'v': 26.36, 'iv': 17.73}]

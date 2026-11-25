@@ -1,0 +1,97 @@
+fx daily >3% {}
+
+lag 0 2015-19 corr NIFTY/US rupee 0.25 hedged 0.41
+U 0 CAGR vol maxDD worstM [np.float64(9.2), np.float64(13.3), np.float64(-21.1), np.float64(-8.1)]
+U 0.1 CAGR vol maxDD worstM [np.float64(9.9), np.float64(12.3), np.float64(-19.1), np.float64(-8.2)]
+U 0.2 CAGR vol maxDD worstM [np.float64(10.5), np.float64(11.5), np.float64(-17.1), np.float64(-8.2)]
+U 0.3 CAGR vol maxDD worstM [np.float64(11.1), np.float64(10.9), np.float64(-15.0), np.float64(-8.2)]
+U 0.4 CAGR vol maxDD worstM [np.float64(11.7), np.float64(10.6), np.float64(-13.1), np.float64(-8.2)]
+U 0.5 CAGR vol maxDD worstM [np.float64(12.2), np.float64(10.4), np.float64(-12.4), np.float64(-8.2)]
+U 1.0 CAGR vol maxDD worstM [np.float64(14.6), np.float64(13.2), np.float64(-20.3), np.float64(-9.7)]
+H 0 CAGR vol maxDD worstM [np.float64(9.2), np.float64(13.3), np.float64(-21.1), np.float64(-8.1)]
+H 0.1 CAGR vol maxDD worstM [np.float64(9.6), np.float64(12.5), np.float64(-19.9), np.float64(-8.2)]
+H 0.2 CAGR vol maxDD worstM [np.float64(9.9), np.float64(11.9), np.float64(-18.6), np.float64(-8.3)]
+H 0.3 CAGR vol maxDD worstM [np.float64(10.2), np.float64(11.4), np.float64(-17.4), np.float64(-8.3)]
+H 0.4 CAGR vol maxDD worstM [np.float64(10.5), np.float64(11.1), np.float64(-16.1), np.float64(-8.4)]
+H 0.5 CAGR vol maxDD worstM [np.float64(10.7), np.float64(10.9), np.float64(-15.0), np.float64(-8.4)]
+H 1.0 CAGR vol maxDD worstM [np.float64(11.8), np.float64(12.8), np.float64(-17.1), np.float64(-9.8)]
+vol change % CI 0.1 [-8.5, -7.0, -5.3]
+vol change % CI 0.2 [-15.8, -12.8, -9.4]
+vol change % CI 0.3 [-22.1, -17.3, -11.9]
+min-vol weight 0.5
+
+lag 0 2020-24 corr NIFTY/US rupee 0.55 hedged 0.61
+U 0 CAGR vol maxDD worstM [np.float64(15.5), np.float64(18.0), np.float64(-34.3), np.float64(-22.5)]
+U 0.1 CAGR vol maxDD worstM [np.float64(16.0), np.float64(17.4), np.float64(-32.8), np.float64(-21.3)]
+U 0.2 CAGR vol maxDD worstM [np.float64(16.4), np.float64(16.9), np.float64(-31.3), np.float64(-20.1)]
+U 0.3 CAGR vol maxDD worstM [np.float64(16.8), np.float64(16.5), np.float64(-29.7), np.float64(-18.9)]
+U 0.4 CAGR vol maxDD worstM [np.float64(17.2), np.float64(16.4), np.float64(-28.1), np.float64(-17.7)]
+U 0.5 CAGR vol maxDD worstM [np.float64(17.5), np.float64(16.5), np.float64(-27.8), np.float64(-16.5)]
+U 1.0 CAGR vol maxDD worstM [np.float64(18.9), np.float64(19.3), np.float64(-27.9), np.float64(-10.5)]
+H 0 CAGR vol maxDD worstM [np.float64(15.5), np.float64(18.0), np.float64(-34.3), np.float64(-22.5)]
+H 0.1 CAGR vol maxDD worstM [np.float64(15.5), np.float64(17.5), np.float64(-33.4), np.float64(-21.6)]
+H 0.2 CAGR vol maxDD worstM [np.float64(15.5), np.float64(17.1), np.float64(-32.5), np.float64(-20.7)]
+H 0.3 CAGR vol maxDD worstM [np.float64(15.5), np.float64(16.9), np.float64(-31.6), np.float64(-19.9)]
+H 0.4 CAGR vol maxDD worstM [np.float64(15.5), np.float64(16.9), np.float64(-30.6), np.float64(-19.0)]
+H 0.5 CAGR vol maxDD worstM [np.float64(15.4), np.float64(17.0), np.float64(-29.8), np.float64(-18.2)]
+H 1.0 CAGR vol maxDD worstM [np.float64(14.7), np.float64(20.0), np.float64(-31.7), np.float64(-13.8)]
+vol change % CI 0.1 [-5.7, -3.7, -1.9]
+vol change % CI 0.2 [-10.4, -6.4, -2.9]
+vol change % CI 0.3 [-14.2, -8.2, -3.2]
+min-vol weight 0.4
+
+lag 0 2015-24 corr NIFTY/US rupee 0.45 hedged 0.55
+U 0 CAGR vol maxDD worstM [np.float64(12.3), np.float64(15.8), np.float64(-34.3), np.float64(-22.5)]
+U 0.1 CAGR vol maxDD worstM [np.float64(12.9), np.float64(15.1), np.float64(-32.8), np.float64(-21.3)]
+U 0.2 CAGR vol maxDD worstM [np.float64(13.4), np.float64(14.5), np.float64(-31.3), np.float64(-20.1)]
+U 0.3 CAGR vol maxDD worstM [np.float64(13.9), np.float64(14.0), np.float64(-29.7), np.float64(-18.9)]
+U 0.4 CAGR vol maxDD worstM [np.float64(14.4), np.float64(13.8), np.float64(-28.1), np.float64(-17.7)]
+U 0.5 CAGR vol maxDD worstM [np.float64(14.8), np.float64(13.8), np.float64(-27.8), np.float64(-16.5)]
+U 1.0 CAGR vol maxDD worstM [np.float64(16.7), np.float64(16.6), np.float64(-27.9), np.float64(-10.5)]
+H 0 CAGR vol maxDD worstM [np.float64(12.3), np.float64(15.8), np.float64(-34.3), np.float64(-22.5)]
+H 0.1 CAGR vol maxDD worstM [np.float64(12.5), np.float64(15.2), np.float64(-33.4), np.float64(-21.6)]
+H 0.2 CAGR vol maxDD worstM [np.float64(12.7), np.float64(14.8), np.float64(-32.5), np.float64(-20.7)]
+H 0.3 CAGR vol maxDD worstM [np.float64(12.8), np.float64(14.5), np.float64(-31.6), np.float64(-19.9)]
+H 0.4 CAGR vol maxDD worstM [np.float64(12.9), np.float64(14.3), np.float64(-30.6), np.float64(-19.0)]
+H 0.5 CAGR vol maxDD worstM [np.float64(13.1), np.float64(14.3), np.float64(-29.8), np.float64(-18.2)]
+H 1.0 CAGR vol maxDD worstM [np.float64(13.2), np.float64(16.8), np.float64(-31.7), np.float64(-13.8)]
+vol change % CI 0.1 [-6.5, -4.9, -3.2]
+vol change % CI 0.2 [-11.9, -8.7, -5.5]
+vol change % CI 0.3 [-16.2, -11.3, -6.8]
+min-vol weight 0.45
+
+lag 1 2015-19 corr NIFTY/US rupee 0.25 hedged 0.41
+U 0 CAGR vol maxDD worstM [np.float64(9.2), np.float64(13.3), np.float64(-21.1), np.float64(-8.1)]
+U 0.2 CAGR vol maxDD worstM [np.float64(10.5), np.float64(11.5), np.float64(-17.6), np.float64(-7.9)]
+H 0 CAGR vol maxDD worstM [np.float64(9.2), np.float64(13.3), np.float64(-21.1), np.float64(-8.1)]
+H 0.2 CAGR vol maxDD worstM [np.float64(9.9), np.float64(11.9), np.float64(-19.1), np.float64(-7.9)]
+
+lag 1 2020-24 corr NIFTY/US rupee 0.55 hedged 0.6
+U 0 CAGR vol maxDD worstM [np.float64(15.5), np.float64(18.0), np.float64(-34.3), np.float64(-22.5)]
+U 0.2 CAGR vol maxDD worstM [np.float64(16.4), np.float64(16.7), np.float64(-31.0), np.float64(-19.6)]
+H 0 CAGR vol maxDD worstM [np.float64(15.5), np.float64(18.0), np.float64(-34.3), np.float64(-22.5)]
+H 0.2 CAGR vol maxDD worstM [np.float64(15.6), np.float64(17.0), np.float64(-32.2), np.float64(-20.3)]
+
+lag 1 2015-24 corr NIFTY/US rupee 0.45 hedged 0.54
+U 0 CAGR vol maxDD worstM [np.float64(12.3), np.float64(15.8), np.float64(-34.3), np.float64(-22.5)]
+U 0.2 CAGR vol maxDD worstM [np.float64(13.4), np.float64(14.3), np.float64(-31.0), np.float64(-19.6)]
+H 0 CAGR vol maxDD worstM [np.float64(12.3), np.float64(15.8), np.float64(-34.3), np.float64(-22.5)]
+H 0.2 CAGR vol maxDD worstM [np.float64(12.7), np.float64(14.6), np.float64(-32.2), np.float64(-20.3)]
+            N     U     H
+2020-03 -22.5 -10.5 -13.8
+2018-10  -8.1  -8.3  -8.7
+2024-10  -7.6   1.9   1.3
+2016-02  -7.0   1.7   0.7
+2018-09  -6.4   2.7   0.6
+2020-02  -6.3  -7.9  -8.2
+2015-08  -6.2  -2.4  -5.2
+2016-11  -6.0   7.2   4.3
+2015-03  -5.5  -0.2  -1.9
+2020-09  -5.1  -6.0  -5.9
+2018-02  -5.1  -2.1  -4.2
+2022-05  -4.1   2.2   0.8
+worst 26 NIFTY weeks mean N,U,H [-4.99, -1.88, -2.57] U up share 0.34615384615384615
+{2015: [-5.3, 6.9, 2.2], 2016: [5.5, 14.4, 11.1], 2017: [30.3, 14.9, 21.8], 2018: [4.6, 3.6, -5.2], 2019: [14.2, 35.5, 33.0], 2020: [13.5, 20.1, 16.4], 2021: [27.7, 32.1, 30.6], 2022: [5.7, -8.9, -18.1], 2023: [21.3, 25.5, 26.3], 2024: [10.9, 31.5, 26.9]}
+Covid 2020 [-28.3, -21.0, -24.6]
+2022 H1 [-8.9, -13.2, -17.3]
+2018 Sep-Oct [-14.0, -5.8, -8.1]

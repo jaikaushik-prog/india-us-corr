@@ -1,0 +1,6 @@
+{"written":"2026-11-25 before running s2_flows, s3b_map, s4b_aftertax",
+"S2":{"data":"NSDL monthly net FPI equity via FinBizNet GitHub 2021-02..2026-10 complete months; 2026 cross-checked with second repo; flow scaled by NIFTY level (crore per index point at prior month-end)",
+"tests":["flow(t) vs NIFTY(t)","flow(t) vs NIFTY-S&P(t)","flow(t) vs NIFTY-S&P(t+1) LEAD","NIFTY-S&P(t) vs flow(t+1) CHASE","flow(t) vs monthly correlation(t)","lead test on secondary-market flow"],
+"pass":"LEAD only actionable if p<0.05 (two-sided permutation) in 2021-24 and same sign in 2025-26", "trials":6},
+"S3b":{"use":"sector betas from 2015-2020 used to predict average sector return after S&P <= -1.5 percent sessions in 2021-2024 (no 2025+)","pass":"Spearman >= 0.6 and permutation p<0.05; otherwise map is labelled low-confidence"},
+"S4b":{"design":"NIFTY TRI + S&P TR in rupees 2015-2024, after fund cost, rebalancing cost 0.25 percent round trip, 13 percent tax (12.5 percent + cess) on realised gains at rebalance and at end; compare yearly vs band(5 points) vs never; stress US return lowered so gross means equal NIFTY, and 3 percent a year below","pass":"20 percent US keeps lower volatility and drawdown, and after-tax return cost in equal-return stress <= 0.5 percent a year"}}
