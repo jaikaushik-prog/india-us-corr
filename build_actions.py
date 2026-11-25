@@ -17,7 +17,7 @@ html = '''<title>NIFTY and US Action Tests</title>
 <div class="tw"><table><thead><tr><th>Idea</th><th class="l">Result</th><th class="l">What to do</th></tr></thead><tbody>
 <tr><td>Trade NIFTY after big US moves</td><td class="w">Failed</td><td class="w">Drop it. Expect the gap and avoid chasing it</td></tr>
 <tr><td>Pick sectors by US exposure</td><td class="w">Ranking passed, 2026 did not follow it</td><td class="w">Use for rough risk awareness only</td></tr>
-<tr><td>Hold some US stocks</td><td class="w">Passed</td><td class="w">Consider 20% to 40%, after taxes and fund costs</td></tr>
+<tr><td>Hold some US stocks</td><td class="w">Passed</td><td class="w">Consider 10% to 30%. Check taxes and fund costs</td></tr>
 <tr><td>Macro warning monitor</td><td class="w">Failed</td><td class="w">Watch India VIX instead</td></tr></tbody></table></div>
 
 <h2>The opening gap takes most of the move</h2>
@@ -39,11 +39,11 @@ html = '''<title>NIFTY and US Action Tests</title>
 <details><summary>Full table and NIFTY's 12 worst months</summary><div class="tw"><table><thead><tr><th>US share</th><th>Return a year</th><th>Volatility</th><th>Worst fall</th><th>Worst month</th></tr></thead><tbody id="t-p"></tbody></table></div><p class="mut">2015 to 2024, unhedged, net of 0.125% per side on rebalancing trades.</p><div class="tw"><table><thead><tr><th>Month</th><th>NIFTY</th><th>S&amp;P in rupees</th></tr></thead><tbody>''' + wm + '''</tbody></table></div></details>
 
 <h2>No sector hides a strong US link</h2>
-<p>We thought a near-zero NIFTY link might hide IT stocks following the Nasdaq. The data says no: since July 2026 IT's link to the S&amp;P is −0.01. Metals are highest at 0.17.</p>
+<p>We thought a near-zero NIFTY link might hide IT stocks following the Nasdaq. The data says no: since July 2026 IT's link to the S&amp;P is −0.01 and metals are highest at 0.17. From July to October alone, IT is 0.01 and financials are highest at 0.21.</p>
 <div class="tw hm" id="c-sec"></div>
 <p class="mut">Correlation with the previous S&amp;P 500 session. 2026 runs to 24 November.</p>
 <p>The order of sectors held up between 2015 to 2020 and 2021 to 2026 (rank correlation 0.84 with the S&amp;P, p = 0.001, and 0.73 with the Nasdaq). FMCG, PSU banks and pharma were the least linked in the first half. Pharma has since moved up. IT's edge over banks is small: 0.05 in the first half (range −0.03 to 0.13) and 0.08 in the second (0.02 to 0.15).</p>
-<p>2026 broke that order. Metals became the most linked sector and IT fell to 0.11, its lowest year in the data. Sensitivity to US yields was no guide: the ranking did not hold (0.18, p = 0.29).</p>
+<p>2026 broke that order. Without November every sector we list has a higher 2026 link (IT 0.16, metals 0.35). Metals became the most linked sector and IT fell to 0.11 with November included, its lowest year in the data. Sensitivity to US yields was no guide: the ranking did not hold (0.18, p = 0.29).</p>
 <details><summary>Sector returns</summary><div class="tw"><table><thead><tr><th>Price return</th><th>2023</th><th>2024</th><th>2025</th><th>2026 to 24 Nov</th></tr></thead><tbody>''' + yr + '''</tbody></table></div><p>IT is down 15.9% in 2026 after falling 12.6% in 2025, so the sector lags as well as decoupling.</p></details>
 
 <h2>The macro monitor did not beat India VIX</h2>
@@ -59,7 +59,7 @@ html = '''<title>NIFTY and US Action Tests</title>
 <li>Take the US allocation result to the group and settle the tax, remittance and fund-cost side before choosing a share.</li>
 <li>Show India VIX and the volatility forecasts on the risk dashboard. Keep the macro regime as a label at most.</li>
 <li>Use the sector table as a rough map of US exposure and recheck it yearly, since 2026 moved off it.</li>
-<li>Next study worth doing is foreign and domestic flows, the one explanation for 2026 we have not tested.</li></ul>
+<li>Foreign flows were tested afterwards. They account for about half of the 2026 gap and do not predict the next month. Domestic flows are still untested.</li></ul>
 <details><summary>Method and limits</summary><ul>
 <li>The trading test uses 5-minute NIFTY futures, entry at the 09:20 open and exit at the 15:20 open, with dated costs of about 4.1 to 4.5 bp. The futures series rolls each month, which adds noise to a few gaps. Both periods of this index data were used in earlier studies, so the check is not pristine.</li>
 <li>The portfolio test is weekly, so it blurs the time-zone gap. Using the US close from one session earlier gave the same conclusion.</li>

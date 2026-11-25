@@ -1,0 +1,18 @@
+horizon 1 2023 0.12 2026 0.07 2026 ex Nov 0.24
+horizon 2 2023 0.28 2026 0.18 2026 ex Nov 0.36
+horizon 5 2023 0.4 2026 0.24 2026 ex Nov 0.51
+horizon 10 2023 0.49 2026 0.23 2026 ex Nov 0.57
+horizon 21 2023 0.59 2026 0.22 2026 ex Nov 0.63
+IT H2 -0.01 Jul-Oct 0.01 2026 exNov 0.16
+METAL H2 0.17 Jul-Oct 0.15 2026 exNov 0.35
+BANK H2 0.09 Jul-Oct 0.1 2026 exNov 0.31
+FIN H2 0.12 Jul-Oct 0.21 2026 exNov 0.35
+AUTO H2 0.14 Jul-Oct 0.17 2026 exNov 0.35
+INFRA H2 -0.01 Jul-Oct 0.06 2026 exNov 0.3
+PHARMA H2 -0.02 Jul-Oct -0.01 2026 exNov 0.26
+REALTY H2 0.12 Jul-Oct 0.18 2026 exNov 0.33
+PSUBANK H2 0.14 Jul-Oct 0.05 2026 exNov 0.3
+ENERGY H2 0.09 Jul-Oct 0.12 2026 exNov 0.32
+FMCG H2 0.03 Jul-Oct 0.11 2026 exNov 0.24
+agree 2026 ex Nov 52 44
+y10 2026 -0.25 exNov -0.27
