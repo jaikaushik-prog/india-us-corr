@@ -13,11 +13,11 @@ body{font-size:13px;line-height:1.5;margin:0;--bg:#ffffff;--r3:#8c99a5}
 main{max-width:none!important;width:672px;margin:0!important;padding:0!important}
 h1{font-size:25px;margin:0 0 10px}h2{font-size:18px;margin:26px 0 7px}h3{font-size:14px;margin:15px 0 4px}
 h1,h2,h3{break-after:avoid}p,ul{max-width:none;margin:0 0 9px}p,li{orphans:4;widows:4}.lead{font-size:15px}.mut{font-size:11.5px}li{margin-bottom:4px}
-table{font-size:11px}th,td{padding:4px 5px;white-space:normal!important}td.w{min-width:0!important}tr,svg,.waf>div,.row{break-inside:avoid}thead{display:table-header-group}
+table{font-size:11px}th,td{padding:4px 5px;white-space:normal!important}td.w{min-width:0!important}tr,svg,.waf>div,.row,#c-70{break-inside:avoid}thead{display:table-header-group}
 .tw{overflow:visible;margin-bottom:10px}.lg{break-after:avoid;font-size:11.5px}.ctl,.box,.tip{display:none!important}
 .det{border-top:1px solid var(--line);margin-top:10px;padding-top:2px}.det>h3:first-child{color:var(--mut)}
 .waf .g{max-width:120px}.waf{gap:14px;margin:8px 0;grid-template-columns:repeat(4,1fr)}#c-waf{grid-template-columns:repeat(3,1fr)}#c-odds{display:block}
-p:has(+div),p:has(+.lg),p:has(+.tw),.lg{break-after:avoid}.tw,table{break-inside:avoid}a{color:#1d5fb0}.nb{break-inside:avoid}
+p:has(+div),#c-70,p:has(+.lg),p:has(+.tw),.lg{break-after:avoid}.tw,table{break-inside:avoid}a{color:#1d5fb0}.nb{break-inside:avoid}
 </style>'''
 LIGHT = '<script>document.documentElement.dataset.theme="light"</script>'
 
@@ -64,9 +64,10 @@ CH = [('c1', 'Is the correlation turning negative?', prep('us_nifty.html', 1, js
       ('c2', 'Yields, oil and the dollar', prep('macro_regimes.html', 2, '', [('Hover or tap to read a month.', ''), ('Do foreign flows (NSDL) and mutual-fund SIPs explain why domestic money blunted the US link?', 'Do foreign flows (NSDL) and mutual-fund SIPs explain why domestic money blunted the US link? Chapter 4 tests foreign flows. Domestic flows are still open.')])),
       ('c3', 'Four tests of what to do', prep('action_tests.html', 3, '', [('-0.00%','0.00%'), ('Foreign flows were tested afterwards.', 'Foreign flows are in chapter 4.')])),
       ('c4', 'Playbook: allocation, sectors, flows', prep('playbook.html', 4, '', [('<p class="mut">The 10 lakh rupees is an example. Change it to your own.</p>', alloc), ('Set your sector weights and a US move. The answer is the typical effect on the next Indian session, using 2021 to 2024.', 'The table shows the typical effect on the next Indian session, using 2021 to 2024.'), ('<p class="mut">The weights shown are placeholders and are rescaled to 100%.</p>', secs)]))]
+CH.append(('c5', 'Early warnings, rotation and chips', prep('decoupling_signals.html', 5)))
 pages = {n: pdf(h, n) for n, _, h in CH}; print(pages)
 front = lambda toc: '<!doctype html><html lang="en"><meta charset="utf-8">' + LIGHT + '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap"><style>' + open('simple.css', encoding='utf8').read() + '</style>' + PRINT + f'''<main>
-<div style="height:930px;display:flex;flex-direction:column;justify-content:space-between;break-after:page"><div style="padding-top:150px"><h1 style="font-size:44px;max-width:600px">NIFTY and the US</h1><p class="lead" style="font-size:19px;max-width:520px">How closely India's market follows Wall Street, what drives it, and what to do about it</p><p class="mut" style="margin-top:24px">Version 2. Data to 24 November 2026. Report dated 25 November 2026.</p></div>
+<div style="height:930px;display:flex;flex-direction:column;justify-content:space-between;break-after:page"><div style="padding-top:150px"><h1 style="font-size:44px;max-width:600px">NIFTY and the US</h1><p class="lead" style="font-size:19px;max-width:520px">How closely India's market follows Wall Street, what drives it, and what to do about it</p><p class="mut" style="margin-top:24px">Version 3. Data to 24 November 2026. Report dated 25 November 2026.</p></div>
 <div><h3>Contents</h3><table style="font-size:13px"><tbody>{toc}</tbody></table></div></div>
 <h1>Summary</h1>
 <p class="lead">NIFTY has drifted away from the US in 2026 but does not move opposite to it. The link is useful for spreading risk. We found no trade in it.</p>
@@ -82,6 +83,8 @@ front = lambda toc: '<!doctype html><html lang="en"><meta charset="utf-8">' + LI
 <tr><td>Does a macro monitor warn of falls?</td><td class="w">No better than India VIX</td><td class="w">Fair, few crashes</td><td>3</td></tr>
 <tr><td>Do US stocks lower risk?</td><td class="w">Yes. At 20%, volatility fell from 15.8% to 14.4% after tax and fees, and the worst fall from 34.4% to 31.4%</td><td class="w">Good on risk, 2015 to 2024 only</td><td>3, 4</td></tr>
 <tr><td>Which sectors follow the US?</td><td class="w">IT, realty and metals most. FMCG and pharma least. 2026 broke part of this order</td><td class="w">Fair</td><td>3, 4</td></tr>
+<tr><td>Does anything warn early?</td><td class="w">No. 0 of 70 tests passed, including bond spreads. The 13-week line is about 36 trading days late</td><td class="w">Fair. Modest effects could be missed</td><td>5</td></tr>
+<tr><td>Did India split from Korea and Taiwan?</td><td class="w">Yes in Q4 2026 (−0.31 and −0.43). Money leaving chips may explain it, but that test failed and a new one is frozen to May 2027</td><td class="w">Fair. Chosen after seeing it</td><td>5</td></tr>
 <tr><td>Do foreign flows explain 2026?</td><td class="w">They account for about half of the gap and do not predict the next month</td><td class="w">Fair. Same-month links do not show cause</td><td>4</td></tr>
 </tbody></table></div>
 <h2>What to do</h2>
@@ -91,12 +94,12 @@ front = lambda toc: '<!doctype html><html lang="en"><meta charset="utf-8">' + LI
 <li>Use foreign flows to explain a month that has ended.</li>
 <li>Recheck the sector map once a year.</li></ul>
 <h2>Read this before relying on it</h2>
-<ul><li>This is version 2. The first version said the link was about zero since July and weakest in NIFTY, and that 21-session correlations showed the clearest weakening. Those depended heavily on November 2026 and are corrected here.</li><li>A separate volatility project reserves January 2025 to October 2026 as a holdout. Chapters 1, 2 and parts of 3 and 4 show NIFTY outcomes in that window, so it is no longer unseen for US and NIFTY ideas. No volatility model was run on it.</li>
+<ul><li>Version 3 adds chapter 5. Version 2 made these corrections: the first version said the link was about zero since July and weakest in NIFTY, and that 21-session correlations showed the clearest weakening. Those depended heavily on November 2026 and are corrected here.</li><li>A separate volatility project reserves January 2025 to October 2026 as a holdout. Chapters 1, 2, 5 and parts of 3 and 4 show NIFTY outcomes in that window, so it is no longer unseen for US and NIFTY ideas. No volatility model was run on it.</li>
 <li>The yield, regime, trading, portfolio, monitor, sector and flow rules were fixed before their results were seen, but some periods had been looked at in earlier work. Many views of the same data were taken, so some differences are chance.</li>
 <li>Monthly flows come from a public GitHub copy of NSDL data. Its ten complete 2026 months match a second copy. Earlier years were not checked against NSDL, and November is incomplete.</li>
 <li>Tax rules come from secondary sources that disagree on some funds, and fund fees are our assumptions. Ask a chartered accountant before investing.</li>
 <li>Portfolio figures differ slightly between chapters. Chapter 3 is before tax and fund fees with monthly rebalancing, and chapter 4 is after both with a 5-point band.</li>
-<li>Still open: domestic flows over a longer history, earnings and valuation gaps, and daily Indian yields.</li>
+<li>Still open: domestic flows over a longer history, country ETF flows, earnings and valuation gaps, and daily Indian yields.</li>
 <li>This is research for discussion. It is not investment or tax advice.</li></ul>
 </main>'''
 def toc(nf):

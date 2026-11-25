@@ -19,4 +19,6 @@ for y in range(2015, 2027):
 B = 'https://raw.githubusercontent.com/'
 for p, o in (('FinBizNet-AI-Tech-Pvt-Ltd/india-market-data/main/data/fii-flows-by-month.csv', 'fb_month.csv'), ('rrb396-sketch/finance---flows/main/data/fpi_monthly.csv', 'rr.csv'), ('nalinisubir-oss/fii-dii-data/main/data/history.json', 'na.json')):
     curl(B + p, 'flows/gh/' + o)
+subprocess.run([sys.executable, 'dl_lead.py'], check=True)
+curl('https://fred.stlouisfed.org/graph/fredgraph.csv?id=T10YIE', 'lead/T10YIE.csv')
 print('done')

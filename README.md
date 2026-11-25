@@ -10,6 +10,8 @@ Start with [NIFTY_and_the_US_report.pdf](NIFTY_and_the_US_report.pdf); the summa
 - Weekly and quarterly data show no lasting decoupling. Weekly correlation is -0.03 in 2026 but 0.38 without November.
 - On price levels, 2026 is the first negative year since at least 2015 (-0.36).
 - 0 of 50 bond-yield tests were significant. The long-run average beat HAR and a regime model at forecasting the correlation.
+- None of 70 leading-signal tests passed, including yields, credit, dollar, oil and flows. The 13-week correlation line takes about 36 trading days to show a break.
+- In Q4 2026 NIFTY moved opposite to Korea (-0.31) and Taiwan (-0.43). A link to chip-stock weakness is growing since 2023 but failed its test.
 - Foreign flows account for about half of NIFTY's 2026 gap and do not predict the next month.
 - Trading NIFTY after big US moves failed. The opening gap takes 0.23 of a 0.28 move per 1% in the S&P.
 - A macro monitor did not beat India VIX at warning of falls.
@@ -30,6 +32,8 @@ Raw market data is not stored here. Yahoo and others revise history, so refetche
 | Month, half-year and year | `periods.py` | `results_periods.txt`, `period_correlations.csv` |
 | Peers, VIX, lead-lag, response sizes | `deep.py` (needs `periods.json`) | `results_deep.txt`, `deep.json` |
 | Weekly and quarterly, November checks | `wq.py`, `wq_check.py`, `wq_check2.py`, `wq_check3.py` | `res_wq*.txt`, `wq.json` |
+| Leading signals, AI rotation, signal delay | `lead.py`, `lead_series.py`, `fast.py` | `res_lead.txt`, `lead_tests.csv`, `lead.json` |
+| Fund rotation, Korea and Taiwan, check of shared charts | `rotation.py`, `kt.py`, `shared_charts_check.py` | `res_rotation.txt`, `res_kt.txt`, `res_shared_charts.txt` |
 | Yields, regimes, forecasts | `macro_study.py` | `results_macro.txt`, `macro.json` |
 | 1. Opening gap | `s1_gap.py` | `res_s1_gap.txt` |
 | 2. Foreign flows | `s2_flows.py` | `res_s2_flows.txt` |
@@ -37,9 +41,9 @@ Raw market data is not stored here. Yahoo and others revise history, so refetche
 | 4. US allocation, before and after tax | `s4_portfolio.py`, `s4b_aftertax.py` | `res_s4_*.txt`, `res_s4b_*.txt` |
 | 5. Macro monitor | `s5_monitor.py` | `res_s5_monitor.txt` |
 
-Rules fixed before running are in `protocol_next.json` (studies 1, 3, 4, 5) and `protocol_phase3.json` (flows, sector map, after-tax test) and `protocol_wq.json` (weekly and quarterly). The regime rules are at the top of `macro_study.py`.
+Rules fixed before running are in `protocol_next.json` (studies 1, 3, 4, 5) and `protocol_phase3.json` (flows, sector map, after-tax test) and `protocol_wq.json` (weekly and quarterly), and `protocol_lead.json` (leading signals). `protocol_chip_forward.json` is a frozen test for December 2026 to May 2027: look once, after 28 May 2027, and do not change it. The regime rules are at the top of `macro_study.py`.
 
-Pages: `build_simple.py`, `build_macro_simple.py`, `build_actions.py` and `build_playbook.py` make the four HTML pages. `build_report.py` makes the PDF and needs Microsoft Edge on Windows.
+Pages: `build_simple.py`, `build_macro_simple.py`, `build_actions.py`, `build_playbook.py` and `build_lead.py` make the five HTML pages. `build_report.py` makes the PDF and needs Microsoft Edge on Windows.
 
 ### Files you must supply
 
@@ -60,8 +64,11 @@ These scripts read local files one folder above the repo:
 
 Version 2 of the report and pages (25 November 2026) corrects three claims that depended heavily on November 2026: that the daily link was about zero since July, that it was weakest in NIFTY, and that longer holding periods showed the clearest weakening.
 
+Version 3 (same day) adds the leading-signal, rotation and chip studies.
+
 ## Open work
 
+- Country-level ETF and fund flows (India, Korea, Taiwan, US), to test whether money left the US
 - Domestic flows over a longer history
 - Earnings growth and valuation gaps
 - Daily Indian yields around RBI and Fed meetings

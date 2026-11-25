@@ -1,0 +1,133 @@
+         y                              x   n1     c1     p1  n2     c2  p2one  p2two      q   pass
+52  link13        US real 10y, 13w change   32  0.416  0.018  14  0.107  0.365  0.720  0.508  False
+36   rel13              Chips vs S&P, 13w   31 -0.407  0.024  14 -0.180  0.273  0.568  0.508  False
+2     rel4           US 2s10s, 13w change  100 -0.205  0.041  48 -0.011  0.466  0.940  0.508  False
+21    rel4              NIFTY vs S&P, 13w  100 -0.194  0.049  48 -0.116  0.211  0.440  0.508  False
+8     rel4             India 10y-3m level  103  0.188  0.053  48 -0.243  0.951  0.100  0.508  False
+66  link13                            VIX   32  0.347  0.056  14  0.134  0.318  0.645  0.508  False
+60  link13              Chips vs S&P, 13w   32 -0.321  0.070  14 -0.123  0.340  0.684  0.508  False
+59  link13           MOVE bond volatility   32  0.325  0.074  14 -0.050  0.576  0.862  0.508  False
+9     rel4  High yield vs Treasuries, 13w  103  0.169  0.089  48  0.025  0.428  0.867  0.508  False
+61  link13               Chips vs S&P, 4w   32 -0.295  0.090  14 -0.290  0.159  0.312  0.508  False
+28   rel13        US real 10y, 13w change   31  0.308  0.092  14  0.262  0.188  0.382  0.508  False
+3     rel4           US 3m10y, 13w change  100 -0.172  0.094  48  0.010  0.530  0.952  0.508  False
+24   rel13             US 10y, 13w change   30  0.308  0.094  14  0.338  0.120  0.240  0.508  False
+31   rel13        India-US 10y, 3m change   30 -0.300  0.110  14 -0.269  0.168  0.345  0.549  False
+32   rel13             India 10y-3m level   31  0.265  0.148  14 -0.543  0.973  0.054  0.661  False
+16    rel4                     Brent, 13w  103  0.142  0.151  48 -0.031  0.584  0.840  0.661  False
+70  link13       INDA vs NIFTY in USD, 4w   31  0.238  0.194  14  0.502  0.040  0.080  0.735  False
+56  link13             India 10y-3m level   32  0.232  0.200  14  0.127  0.346  0.671  0.735  False
+39   rel13                    USDINR, 13w   31  0.235  0.200  14 -0.480  0.955  0.088  0.735  False
+1     rel4                 US 2s10s level  103 -0.123  0.216  48 -0.216  0.061  0.130  0.735  False
+37   rel13               Chips vs S&P, 4w   31 -0.230  0.222  14 -0.226  0.228  0.455  0.735  False
+63  link13                    USDINR, 13w   31  0.218  0.242  14  0.326  0.131  0.270  0.735  False
+10    rel4    EM bonds vs Treasuries, 13w  103  0.118  0.243  48 -0.048  0.629  0.754  0.735  False
+30   rel13             India-US 10y level   31 -0.212  0.255  14  0.323  0.868  0.272  0.735  False
+53  link13       US breakeven, 13w change   32 -0.207  0.262  14  0.145  0.701  0.623  0.735  False
+35   rel13           MOVE bond volatility   31  0.200  0.287  14  0.313  0.137  0.281  0.773  False
+48  link13             US 10y, 13w change   30  0.194  0.311  14  0.130  0.327  0.659  0.806  False
+46   rel13       INDA vs NIFTY in USD, 4w   31  0.187  0.324  14 -0.295  0.834  0.320  0.809  False
+50  link13           US 2s10s, 13w change   30 -0.175  0.340  14 -0.249  0.202  0.399  0.820  False
+14    rel4              Dollar index, 13w  103 -0.081  0.414  48  0.126  0.794  0.404  0.905  False
+5     rel4       US breakeven, 13w change  103  0.081  0.419  48  0.115  0.210  0.425  0.905  False
+40   rel13                     Brent, 13w   31  0.148  0.426  14 -0.030  0.522  0.930  0.905  False
+20    rel4                 EM vs S&P, 13w  103 -0.078  0.448  48 -0.100  0.258  0.506  0.905  False
+42   rel13                            VIX   31  0.131  0.474  14 -0.289  0.850  0.319  0.905  False
+49  link13                 US 2s10s level   31  0.122  0.500  14  0.020  0.465  0.950  0.905  False
+45   rel13              NIFTY vs S&P, 13w   30 -0.126  0.507  14 -0.052  0.427  0.855  0.905  False
+58  link13    EM bonds vs Treasuries, 13w   32 -0.120  0.520  14 -0.362  0.106  0.207  0.905  False
+13    rel4               Chips vs S&P, 4w  103  0.061  0.541  48 -0.033  0.585  0.819  0.905  False
+15    rel4                    USDINR, 13w  100  0.061  0.546  48  0.091  0.268  0.532  0.905  False
+67  link13            India VIX minus VIX   32 -0.099  0.596  14 -0.193  0.265  0.509  0.905  False
+29   rel13       US breakeven, 13w change   31  0.096  0.598  14  0.430  0.062  0.120  0.905  False
+7     rel4        India-US 10y, 3m change   99  0.056  0.599  48 -0.183  0.890  0.215  0.905  False
+57  link13  High yield vs Treasuries, 13w   32 -0.097  0.605  14 -0.280  0.166  0.323  0.905  False
+18    rel4                            VIX  103 -0.050  0.609  48 -0.201  0.074  0.164  0.905  False
+69  link13              NIFTY vs S&P, 13w   30  0.085  0.651  14  0.044  0.460  0.885  0.905  False
+64  link13                     Brent, 13w   32 -0.081  0.661  14  0.284  0.832  0.327  0.905  False
+22    rel4       INDA vs NIFTY in USD, 4w  102 -0.042  0.663  48  0.070  0.684  0.636  0.905  False
+38   rel13              Dollar index, 13w   31  0.079  0.672  14  0.317  0.130  0.264  0.905  False
+0     rel4             US 10y, 13w change  100  0.043  0.675  48  0.059  0.342  0.689  0.905  False
+51  link13           US 3m10y, 13w change   30 -0.074  0.697  14  0.011  0.510  0.972  0.905  False
+25   rel13                 US 2s10s level   31 -0.072  0.703  14 -0.608  0.010  0.023  0.905  False
+26   rel13           US 2s10s, 13w change   30 -0.069  0.712  14 -0.469  0.043  0.091  0.905  False
+33   rel13  High yield vs Treasuries, 13w   31  0.067  0.714  14  0.291  0.150  0.310  0.905  False
+17    rel4            Copper vs gold, 13w  103  0.036  0.717  48  0.077  0.301  0.618  0.905  False
+65  link13            Copper vs gold, 13w   32 -0.064  0.734  14  0.097  0.627  0.750  0.905  False
+6     rel4             India-US 10y level  102 -0.034  0.746  48 -0.058  0.355  0.693  0.905  False
+43   rel13            India VIX minus VIX   31  0.059  0.760  14  0.110  0.348  0.704  0.905  False
+4     rel4        US real 10y, 13w change  103  0.029  0.762  48  0.030  0.422  0.841  0.905  False
+23    rel4       Foreign flow, last month   23 -0.061  0.788  48 -0.167  0.129  0.251  0.905  False
+54  link13             India-US 10y level   31  0.054  0.789  14  0.232  0.204  0.422  0.905  False
+62  link13              Dollar index, 13w   32  0.052  0.792  14  0.272  0.177  0.346  0.905  False
+12    rel4              Chips vs S&P, 13w  103 -0.023  0.811  48 -0.008  0.482  0.954  0.905  False
+34   rel13    EM bonds vs Treasuries, 13w   31 -0.042  0.814  14  0.137  0.671  0.650  0.905  False
+55  link13        India-US 10y, 3m change   30 -0.035  0.850  14  0.241  0.798  0.410  0.907  False
+68  link13                 EM vs S&P, 13w   32 -0.034  0.851  14  0.132  0.680  0.642  0.907  False
+44   rel13                 EM vs S&P, 13w   31  0.035  0.855  14 -0.313  0.857  0.286  0.907  False
+19    rel4            India VIX minus VIX  103  0.016  0.876  48  0.228  0.062  0.123  0.915  False
+11    rel4           MOVE bond volatility  103 -0.012  0.907  48  0.066  0.660  0.652  0.934  False
+27   rel13           US 3m10y, 13w change   30  0.010  0.956  14 -0.051  0.551  0.881  0.959  False
+41   rel13            Copper vs gold, 13w   31 -0.010  0.959  14  0.159  0.704  0.606  0.959  False
+47   rel13       Foreign flow, last month    7    NaN    NaN  14 -0.043    NaN  0.884    NaN  False
+71  link13       Foreign flow, last month    7    NaN    NaN  14 -0.027    NaN  0.934    NaN  False
+tests 70 p1<.05 4 pass 0 same sign share 0.63 nominal p1<.05 and p2<.10: []
+
+z-scores just before each episode
+                                24Q1  25Q3  26Q4   now  raw now
+US 10y, 13w change            -1.60 -0.67  1.37  0.39     0.35
+US 2s10s level                -1.02  0.58  0.49  0.51     0.28
+US 2s10s, 13w change           0.19  0.46  0.12 -0.65    -0.22
+US 3m10y, 13w change          -1.01 -0.25  0.69 -0.15    -0.12
+US real 10y, 13w change       -1.30 -0.33  1.22  0.86     0.53
+US breakeven, 13w change      -0.87 -0.74  0.67 -0.97    -0.18
+India-US 10y level            -2.29 -1.90 -1.12 -0.96     2.25
+India-US 10y, 3m change       -0.38 -0.72 -0.68  0.57     0.07
+India 10y-3m level            -1.49 -0.82  0.50  0.78     1.77
+High yield vs Treasuries, 13w -0.02 -0.35  0.94 -1.00    -0.01
+EM bonds vs Treasuries, 13w    0.49 -0.02  0.11 -0.93    -0.02
+MOVE bond volatility           0.89 -0.18  0.19 -0.23    96.04
+Chips vs S&P, 13w              0.94  1.40 -1.46 -1.60    -0.17
+Chips vs S&P, 4w               1.32  1.69  0.99 -1.12    -0.07
+Dollar index, 13w             -1.58 -1.78 -0.14  1.25     0.05
+USDINR, 13w                   -0.31 -0.43  0.06 -2.01    -0.02
+Brent, 13w                    -0.88 -0.80  2.04 -0.19    -0.02
+Copper vs gold, 13w           -0.32 -0.93  0.65  1.00     0.08
+VIX                           -1.05 -0.66 -0.66  1.81    28.44
+India VIX minus VIX            1.07 -0.07  0.28 -2.03   -12.33
+EM vs S&P, 13w                -0.12  0.53 -0.77 -1.51    -0.10
+NIFTY vs S&P, 13w             -0.05 -0.16 -1.20  1.91     0.11
+INDA vs NIFTY in USD, 4w      -0.85 -0.00  0.45 -2.38    -0.03
+Foreign flow, last month       0.30  0.52  0.89 -0.73    -1.54
+
+profile: predictor leads 3,2,1 | 0 | lags 1,2,3 months
+                  lead3  lead2  lead1  same  lag1  lag2  lag3
+US 10y            0.17   0.04  -0.08  0.08  0.07  0.06 -0.05
+2s10s            -0.04  -0.07  -0.22  0.08  0.11 -0.19  0.04
+HY vs Tsy         0.03   0.14   0.04 -0.11  0.14  0.02  0.10
+EM bonds vs Tsy  -0.03   0.08   0.07 -0.04 -0.04  0.07  0.06
+Dollar            0.01   0.11  -0.09  0.01 -0.15  0.03 -0.06
+USDINR            0.14   0.06  -0.12 -0.28  0.07  0.04  0.01
+Brent             0.13   0.09   0.01 -0.03  0.01 -0.01  0.02
+Chips vs S&P     -0.06   0.02   0.03 -0.23 -0.10  0.10  0.07
+VIX              -0.12  -0.04  -0.13  0.23 -0.04 -0.08  0.01
+India-US 10y      0.02  -0.05   0.08 -0.08 -0.12  0.01  0.04
+Foreign flow     -0.10  -0.24  -0.02  0.31  0.06  0.08  0.16
+AI same week ['2015-22', 417, 0.0, 0.54, 0.03, 1.09, 9.91, 0.59]
+AI same week ['2023-Sep26', 195, 0.0, 0.38, -0.07, 0.2, 5.46, -1.91]
+AI same week ['2025-Sep26', 91, -0.0, 0.39, -0.09, -0.45, 3.79, -2.31]
+AI same week ['Oct-Nov26', 8, 0.01, -0.18, -0.16, 0.76, -1.12, -1.81]
+AI lead 1w 2015-22 416 [ 0.001 -0.079] [ 0.53 -1.71]
+AI lead 1w 2023-Sep26 195 [-0.002  0.04 ] [-1.79  0.95]
+AI lead 1w Oct-Nov26 8 [0.026 0.291] [1.4  2.48]
+weeks of big chip underperformance: NIFTY-S&P mean [('15-22', 42, np.float64(0.13)), ('23-Sep26', 31, np.float64(0.98)), ('Q4', 5, np.float64(4.43))]
+              n    s     c
+2026-10-02 -3.2 -0.5   2.2
+2026-10-09  0.4  1.3  -3.6
+2026-10-16  2.7 -0.3  -8.7
+2026-10-23 -2.4 -1.0  -6.9
+2026-10-30  2.0  0.7   7.0
+2026-11-06  8.2 -4.9 -21.3
+2026-11-13  0.5  3.2  12.9
+2026-11-20  2.6 -5.6  -6.0
+detector: median delay days, 90%, false dips per year {'13 weeks': [36, 55, 0.4], '5 weeks': [11, 23, 3.5], 'EWMA 10d': [10, 25, 3.0]}

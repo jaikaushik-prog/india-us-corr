@@ -1,0 +1,4 @@
+{"frozen":"2026-11-25","question":"Does NIFTY do better when chips lag the S&P, after allowing for the S&P itself?",
+"data":"weekly Friday closes exactly as in lead.py: n = NIFTY log return; s = S&P log return through the last US session before Friday; c = log(SOXX/SPY) change, same timing",
+"window":"26 weeks ending 2026-12-04 to 2027-05-28","model":"n on constant, s, c; Newey-West lag 4",
+"pass":"coefficient on c < 0 with one-sided p < 0.05","fail":"anything else; no re-specification","look":"once, after 2027-05-28","also_report":"same regression without the single most influential week"}
